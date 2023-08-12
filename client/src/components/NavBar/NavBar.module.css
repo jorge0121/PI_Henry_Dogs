@@ -1,0 +1,64 @@
+.logo {
+    width: 70%;
+    height: 40px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .nav {
+    color: #fff;
+    background-color: rgb(19, 175, 223);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px 0px 0px;
+    width: 96%;
+    z-index: 1;
+    position: fixed;
+    border-radius: 0px 0px 0px 30px;
+  }
+  
+  .logoAndTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .TitleAndSearchBar {
+    margin-left: 1%;
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .aboutNavButton {
+    margin-right: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60px;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+    
+  }
+  .addnewdog {
+    margin-right: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+    
+  }
+
+    
+  
+  

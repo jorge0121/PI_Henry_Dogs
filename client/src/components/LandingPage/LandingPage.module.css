@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .title{
+    font-size: 45px;
+    color: aliceblue;
+  }
+  .bg_video {
+    position: absolute;
+    z-index: -1;
+    height: 190vh;
+    width: 100%;
+    object-fit: cover;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 180%;
+    min-height: 150%;
+  }
+   
+    
+  
+  .ButtonGo {
+      display: inline-block;
+      font-size: 2em;
+      padding: .5em .5em;
+      margin-top: 50px;
+      margin-bottom: 80px;
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: #050505c5;
+      color: #fff;
+      border-radius: 10px;
+      border: 3px solid black;
+      cursor:pointer;
+      
+      /*position:fixed;*/
+      transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+      box-shadow: 0 2px 25px rgba(124, 195, 91, 0.5);
+    }
+    .ButtonGo:hover{
+      background-color: #fff;
+      color: black;
+    }
+    /*}.bubblyButton:focus {
+      outline: 0;
+    }
+    .bubblyButton:before, .bubblyButton:after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 140%;
+      height: 100%;
+      left: -20%;
+      z-index: -1000;
+      transition: all ease-in-out 0.5s;
+      background-repeat: no-repeat;
+    }
+      .bubblyButton:active {
+      transform: scale(0.9);
+      background-color: #023809;
+      box-shadow: 0 2px 25px rgba(2, 122, 32, 0.2);
+    }
+    .bubblyButton.animate:before {
+      display: block;
+      animation: topBubbles ease-in-out 0.75s forwards;
+    }*/
+  
