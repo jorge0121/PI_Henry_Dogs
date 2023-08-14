@@ -7,7 +7,7 @@ export default function About() {
   return (
     <Fragment>
       <NavBar />
-      
+      <h1>este es el About</h1>
           </Fragment>
           );
 }

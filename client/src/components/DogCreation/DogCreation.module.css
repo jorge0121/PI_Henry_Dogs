@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(1, 53, 5);
+    background-color: rgb(100, 153, 223);
     box-shadow: 6px 7px 8px -6px rgba(69, 69, 69, 0.7);
     border-radius: 15px;
     color: white;
@@ -19,9 +19,13 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+   
   }
   form{
       width: 650px;
+      border: 2px solid white;
+      border-radius: 15px;
+      background-image: url(https://www.tiendanimal.es/articulos/wp-content/uploads/2022/07/que-frutas-pueden-comer-los-perros-1200x675.jpg);
   }
   .button {
     cursor: pointer;
@@ -113,4 +117,9 @@
     overflow: hidden;
     border: 1px solid #ccc;
   }
-  
+  .Areasection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }

@@ -7,14 +7,14 @@ import styles from "./DogCreation.module.css";
 function validateForm(input) {
   let errors = {};
 
-  // NAME
+  // input nombre
   if (!input.name) {
     errors.name = "You must type a name";
   } else {
     errors.name = "";
   }
 
-  // WEIGHTS
+  // input peso
   if (!input.weight_min) {
     // weight min
     errors.weight_min = "Type a valid minimal weight number";
@@ -31,7 +31,7 @@ function validateForm(input) {
   } else {
     errors.weight_max = "";
   }
-  // HEIGHTS
+  // input altura
   if (!input.height_min) {
     // height min
     errors.height_min = "Type a valid minimal height number";
@@ -110,7 +110,7 @@ export default function DogCreation() {
       !errors.weight_max &&
       !errors.height_max
     ) {
-      alert("Your dog has been created successfully");
+      alert("Created successfully");
       dispatch(postDog(input));
       setInput({
         name: "",
@@ -136,10 +136,11 @@ export default function DogCreation() {
     <Fragment>
       <div className={styles.mainContainerCreation}>
         <div>
-          <h2>Create your Woof</h2>
+          <h2>Create your Dog</h2>
         </div>
         <div className={styles.formContainer}>
           <form onSubmit={(e) => handleSubmit(e)}>
+          <div className={styles.Areasection}>
             <div className={styles.Section}>
               <label>Name:</label>
               <input
@@ -154,6 +155,7 @@ export default function DogCreation() {
                 <p className={styles.error}>{errors.name}</p>
               </div>
             </div>
+            
             <div className={styles.Section}>
               <label>Image URL:</label>
               <input
@@ -167,6 +169,8 @@ export default function DogCreation() {
                 <p className={styles.error}>{errors.image}</p>
               </div>
             </div>
+            </div>
+            <div className={styles.Areasection}>
             <div className={styles.Section}>
               <h4>Heights</h4>
               <label>Min</label>
@@ -194,6 +198,7 @@ export default function DogCreation() {
                 <p className={styles.error}>{errors.height_max}</p>
               </div>
             </div>
+            
             <div className={styles.Section}>
               <h4>Weights</h4>
               <label>Min</label>
@@ -220,6 +225,7 @@ export default function DogCreation() {
               <div>
                 <p className={styles.error}>{errors.weight_max}</p>
               </div>
+            </div>
             </div>
             <div className={styles.Section}>
               <label>Life Span</label>
@@ -257,7 +263,7 @@ export default function DogCreation() {
                 <button className={styles.buttonCancel}>Cancel</button>
               </Link>
               <button className={styles.button} type="submit">
-                Creat 🐕
+                Save
               </button>
             </div>
           </form>
